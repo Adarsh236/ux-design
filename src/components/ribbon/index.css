@@ -1,0 +1,55 @@
+.ribbon-text {
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 130%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 5px;
+
+  color: #ffffff;
+}
+
+.ribbon-position {
+  position: relative;
+  display: flex;
+  align-content: center;
+  justify-content: flex-end;
+  width: unset;
+  top: -35px;
+}
+.ribbon-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 50px;
+  width: 78px;
+  background-color: transparent;
+  cursor: default;
+}
+
+.yellow-ribbon {
+  display: flex;
+  background: url("../../img/yellow-ribbon.png") no-repeat;
+  background-size: 78px 50px;
+  width: -webkit-fill-available;
+  justify-content: center;
+}
+
+.green-ribbon {
+  display: flex;
+  background: url("../../img/green-ribbon.png") no-repeat;
+  background-size: 78px 50px;
+  width: -webkit-fill-available;
+  justify-content: center;
+}
+
+.red-ribbon {
+  display: flex;
+  background: url("../../img/red-ribbon.png") no-repeat;
+  background-size: 78px 50px;
+  width: -webkit-fill-available;
+  justify-content: center;
+}

@@ -1,0 +1,32 @@
+.button {
+  background: #ff7c0f;
+  border-radius: 5px;
+  width: 100%;
+  border-color: transparent;
+
+  height: 40px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 21px;
+  line-height: 175.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ff9741;
+}
+
+button:active {
+  background: #cd5d00;
+}
+
+@media screen and (min-width: 992px) {
+  .carousel-button {
+    height: 50px !important;
+  }
+}

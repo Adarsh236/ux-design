@@ -1,0 +1,200 @@
+.bag {
+  position: relative;
+  left: -10px;
+  top: -10px;
+  width: 21px;
+  height: 21px;
+
+  background: #094d8a;
+  border-radius: 5px 0px;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 175.5%;
+  /* or 21px */
+
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.carousel-container {
+  padding: 10px;
+  border-radius: 5px;
+  width: 90%;
+  min-height: 307px;
+}
+
+.exclusive {
+  background: url("../../img/carousel-card-exclusive.png") no-repeat;
+  background-size: cover;
+}
+.best {
+  background: url("../../img/carousel-card-best.png") no-repeat;
+  background-size: cover;
+}
+.new {
+  background: url("../../img/carousel-card-new.png") no-repeat;
+  background-size: cover;
+}
+
+.carousel-profile {
+  display: grid;
+  grid-template-columns: 60px auto;
+  grid-template-rows: 30px 30px 30px;
+  grid-auto-flow: row;
+
+  margin-top: -68px;
+  margin-bottom: 10px;
+}
+
+.carousel-profile-img {
+  grid-column: 1;
+  grid-row: 1 / 4;
+  display: flex;
+  background: url("../../img/logo.png") no-repeat;
+  background-size: 60px 60px;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+}
+
+.carousel-profile-name {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 175.5%;
+  /* or 37px */
+
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
+}
+
+.carousel-profile-star {
+  grid-column: 2;
+  grid-row: 2 / 3;
+
+  display: flex;
+  align-items: center;
+}
+
+.carousel-profile-review {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 175.5%;
+  /* or 28px */
+
+  display: flex;
+  align-items: center;
+
+  color: #6195c4;
+  grid-column: 2;
+  grid-row: 3 / 4;
+}
+
+div.carousel-container ul {
+  list-style: none;
+  display: contents;
+}
+
+div.carousel-container ul li:before {
+  content: "✓";
+  color: #1caa2a;
+  width: 25px;
+  font-size: 20px;
+  transform: scale(1.5, 1);
+}
+
+div.carousel-container li {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 175.5%;
+  margin-left: 10px;
+  display: flex;
+  justify-content: flex-start !important;
+
+  color: #ffffff;
+}
+
+.offer-text {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 140%;
+  text-align: center;
+
+  color: #ff9741;
+
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottom-text {
+  display: flex;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 175.5%;
+  text-align: center;
+  justify-content: center;
+  color: #cbcbcb;
+  margin-top: 6px;
+}
+
+.bottom-highlight {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 175.5%;
+  font-size: 12px;
+  display: contents;
+
+  color: #6195c4;
+}
+
+@media screen and (min-width: 992px) {
+  ul.react-multi-carousel-track {
+    align-items: center;
+  }
+
+  ul.react-multi-carousel-track > li > div.carousel-container {
+    max-width: 327px;
+    height: 350px;
+  }
+
+  .middle-carousel-container {
+    max-width: 405px !important;
+    height: 370px !important;
+  }
+
+  .left-carousel-container {
+    margin-left: auto;
+  }
+  .right-carousel-container {
+    margin-right: auto;
+  }
+  .offer-text {
+    height: 87px !important;
+  }
+  .carousel-profile {
+    margin-top: -58px !important;
+  }
+  .middle-carousel-profile {
+    margin-top: -48px !important;
+  }
+}
