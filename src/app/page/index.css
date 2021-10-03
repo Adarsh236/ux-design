@@ -1,5 +1,24 @@
+.page-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+  margin-bottom: 250px;
+}
+
+.bottom-highlight {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 175.5%;
+  font-size: 12px;
+  display: contents;
+
+  color: #6195c4;
+}
+
+/* customize  carousel*/
 .react-multi-carousel-list {
-  background: url("../img/carousel-backgroud.png") no-repeat;
+  background: url("../../assets/images/carousel-backgroud.png") no-repeat;
   background-size: cover;
   padding: 48px 0px 75px 0px;
 }
@@ -24,11 +43,4 @@ ul.react-multi-carousel-track li {
 
 .react-multi-carousel-dot-list {
   bottom: 26px !important;
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-  margin-top: 70px;
-  margin-bottom: 250px;
 }

@@ -12,7 +12,7 @@
   color: #ffffff;
 }
 
-.ribbon-position {
+.ribbon-container {
   position: relative;
   display: flex;
   align-content: center;
@@ -20,7 +20,7 @@
   width: unset;
   top: -35px;
 }
-.ribbon-container {
+.ribbon-child-container {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -32,7 +32,7 @@
 
 .yellow-ribbon {
   display: flex;
-  background: url("../../img/yellow-ribbon.png") no-repeat;
+  background: url("../../../assets/images/yellow-ribbon.png") no-repeat;
   background-size: 78px 50px;
   width: -webkit-fill-available;
   justify-content: center;
@@ -40,7 +40,7 @@
 
 .green-ribbon {
   display: flex;
-  background: url("../../img/green-ribbon.png") no-repeat;
+  background: url("../../../assets/images/green-ribbon.png") no-repeat;
   background-size: 78px 50px;
   width: -webkit-fill-available;
   justify-content: center;
@@ -48,7 +48,7 @@
 
 .red-ribbon {
   display: flex;
-  background: url("../../img/red-ribbon.png") no-repeat;
+  background: url("../../../assets/images/red-ribbon.png") no-repeat;
   background-size: 78px 50px;
   width: -webkit-fill-available;
   justify-content: center;

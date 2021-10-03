@@ -1,6 +1,5 @@
 import React from "react";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-
 import "./index.css";
 
 const CustomAccordion = ({ title, content }) => {

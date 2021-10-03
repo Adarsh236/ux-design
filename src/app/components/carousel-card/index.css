@@ -1,4 +1,4 @@
-.bag {
+.carousel-bag {
   position: relative;
   left: -10px;
   top: -10px;
@@ -13,7 +13,6 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 175.5%;
-  /* or 21px */
 
   align-items: center;
   text-align: center;
@@ -29,15 +28,16 @@
 }
 
 .exclusive {
-  background: url("../../img/carousel-card-exclusive.png") no-repeat;
+  background: url("../../../assets/images/carousel-card-exclusive.png")
+    no-repeat;
   background-size: cover;
 }
 .best {
-  background: url("../../img/carousel-card-best.png") no-repeat;
+  background: url("../../../assets/images/carousel-card-best.png") no-repeat;
   background-size: cover;
 }
 .new {
-  background: url("../../img/carousel-card-new.png") no-repeat;
+  background: url("../../../assets/images/carousel-card-new.png") no-repeat;
   background-size: cover;
 }
 
@@ -55,7 +55,7 @@
   grid-column: 1;
   grid-row: 1 / 4;
   display: flex;
-  background: url("../../img/logo.png") no-repeat;
+  background: url("../../../assets/images/profile-pic.png") no-repeat;
   background-size: 60px 60px;
   justify-content: center;
   align-items: center;
@@ -68,7 +68,6 @@
   font-weight: 600;
   font-size: 21px;
   line-height: 175.5%;
-  /* or 37px */
 
   display: flex;
   align-items: center;
@@ -90,7 +89,6 @@
   font-weight: bold;
   font-size: 16px;
   line-height: 175.5%;
-  /* or 28px */
 
   display: flex;
   align-items: center;
@@ -126,7 +124,7 @@ div.carousel-container li {
   color: #ffffff;
 }
 
-.offer-text {
+.carousel-offer-text {
   font-family: Lato;
   font-style: normal;
   font-weight: 900;
@@ -142,7 +140,7 @@ div.carousel-container li {
   justify-content: center;
 }
 
-.bottom-text {
+.carousel-bottom-text {
   display: flex;
 
   font-family: Lato;
@@ -154,17 +152,6 @@ div.carousel-container li {
   justify-content: center;
   color: #cbcbcb;
   margin-top: 6px;
-}
-
-.bottom-highlight {
-  font-family: Lato;
-  font-style: normal;
-  font-weight: bold;
-  line-height: 175.5%;
-  font-size: 12px;
-  display: contents;
-
-  color: #6195c4;
 }
 
 @media screen and (min-width: 992px) {
@@ -185,12 +172,15 @@ div.carousel-container li {
   .left-carousel-container {
     margin-left: auto;
   }
+
   .right-carousel-container {
     margin-right: auto;
   }
-  .offer-text {
+
+  .carousel-offer-text {
     height: 87px !important;
   }
+
   .carousel-profile {
     margin-top: -58px !important;
   }

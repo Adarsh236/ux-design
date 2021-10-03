@@ -1,8 +1,8 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
 import CarouselCard from "../components/carousel-card";
 import AccordionCard from "../components/accordion-card";
+import "react-multi-carousel/lib/styles.css";
 import "./index.css";
 
 const items = [
@@ -25,13 +25,13 @@ const responsive = {
 };
 
 const Page = () => {
-  const [middleSlide, setMiddleSlide] = React.useState(1);
+  const [middleSlideIndex, setMiddleSlideIndex] = React.useState(1);
 
   return (
-    <div>
+    <section>
       <Carousel
         afterChange={(previousSlide, { currentSlide }) => {
-          setMiddleSlide(currentSlide + 1);
+          setMiddleSlideIndex(currentSlide + 1);
         }}
         responsive={responsive}
         arrows={false}
@@ -43,17 +43,17 @@ const Page = () => {
         {items.map((item, index) => (
           <CarouselCard
             item={item}
-            middleSlide={middleSlide}
+            middleSlideIndex={middleSlideIndex}
             index={index}
             key={item.id.toString()}
           />
         ))}
       </Carousel>
 
-      <div className="container">
+      <div className="page-container">
         <AccordionCard item={items[0]} />
       </div>
-    </div>
+    </section>
   );
 };
 

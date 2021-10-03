@@ -41,30 +41,32 @@ const CarouselCard = ({ item }) => {
   );
 
   return (
-    <div className={backgroundType + " box"}>
-      <div className="bag">{item.id}</div>
+    <div className={`accordion-container ${backgroundType}`}>
+      <div className="accordion-bag">{item.id}</div>
       <Ribbon type={ribbonType} title={item.ribbonType} />
 
-      <section className="custom">
-        <section className="profile center">
-          <div className="profile-img"></div>
-          <div className="profile-name">Leo Vegas</div>
-          <div className="profile-star">
+      <section className="accordion-child-container">
+        <div className="accordion-profile center">
+          <div className="accordion-profile-img"></div>
+          <div className="accordion-profile-name">Leo Vegas</div>
+          <div className="accordion-profile-star">
             <Rating />
           </div>
-          <div className="profile-review">Read Review</div>
-        </section>
+          <div className="accordion-profile-review">Read Review</div>
+        </div>
         <ul>
           <li>Over 1500 slot</li>
           <li>An award-winning sports book</li>
           <li>Very good experience in the mobile</li>
         </ul>
 
-        <div className="offer-text">100 SEK free games or 100 free spins</div>
+        <div className="accordion-offer-text">
+          100 SEK free games or 100 free spins
+        </div>
         <CustomButton onClick={onClick} />
       </section>
 
-      <div className="bottom-text">
+      <div className="accordion-bottom-text">
         +18 - Play responsibly - Read terms and conditions
         <span className="bottom-highlight">&nbsp; here</span>
       </div>
